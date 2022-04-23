@@ -1,4 +1,14 @@
+*
+{
+    -fx-font-family: "Courier New";
+}
+
 .pane-background
 {
     -fx-background-color: #48432f;
+}
+
+.manilla-background
+{
+    -fx-background-color: #fdf6e4;
 }

@@ -16,11 +16,11 @@ public class MainApplication extends Application
     public void start(Stage stage) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("index.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 200, 75);
+        Scene scene = new Scene(fxmlLoader.load(), 260, 75);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("stylesheet.css")).toExternalForm());
         stage.setTitle("Artillery Calculator");
         stage.setAlwaysOnTop(true);
-        stage.setOpacity(.95);
+        stage.setOpacity(.85);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
