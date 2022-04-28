@@ -1,6 +1,6 @@
 # Artillery Calculator 
 ## Info
-Calculate Meters into Mils for artillery calculations in Mil-Sim games like Squad and Hell Let Loose.
+Calculate Meters into Mils for artillery calculations in Mil-Sim games like Squad and Hell Let Loose. Works on top of game window. 
 
 ## How To
 Type in meters and then convert to mils. Use this to get the angle degree needed for your target. Use the Russian checkbox for the Russian team on Hell Let Loose. 
