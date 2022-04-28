@@ -14,7 +14,7 @@
       <TextField fx:id="textField_milOutput" editable="false" layoutX="159.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" styleClass="manilla-background" />
       <Label layoutX="8.0" layoutY="18.0" text="Meters:" textFill="WHITE" />
       <Label layoutX="123.0" layoutY="18.0" text="Mils:" textFill="WHITE" />
-      <Button layoutX="229.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" stylesheets="@stylesheet.css" text="_" />
-      <Button layoutX="229.0" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" stylesheets="@stylesheet.css" text="X" />
+      <Button layoutX="229.0" layoutY="14.0" mnemonicParsing="false" onAction="#minimize" prefHeight="25.0" prefWidth="24.0" stylesheets="@stylesheet.css" text="_" />
+      <Button layoutX="229.0" layoutY="43.0" mnemonicParsing="false" onAction="#closeButton" prefHeight="25.0" prefWidth="24.0" stylesheets="@stylesheet.css" text="X" />
    </children>
 </Pane>

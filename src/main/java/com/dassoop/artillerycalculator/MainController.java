@@ -17,9 +17,6 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable
 {
     @FXML
-    private Label welcomeText;
-
-    @FXML
     private TextField textField_meterInput = new TextField();
 
     @FXML
@@ -59,10 +56,16 @@ public class MainController implements Initializable
         stage.setY(delta.y + me.getScreenY());
     }
 
-    @FXML
-    protected void onHelloButtonClick()
+    @FXML public void closeButton()
     {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        Stage stage = (Stage) textField_meterInput.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML public void minimize()
+    {
+        Stage stage = (Stage) textField_meterInput.getScene().getWindow();
+        stage.setIconified(true);
     }
 
     public void calculateMils()
@@ -88,24 +91,14 @@ public class MainController implements Initializable
                 double l = 100;
                 result = Math.round(1120 - (((meters / l) - 1) * k));
             }
+            textField_milOutput.setText(String.valueOf(result));
+        }
+        else
+        {
+            textField_milOutput.setText("OOB");
+
         }
 
-        textField_milOutput.setText(String.valueOf(result));
+
     }
-
-
-//        if (input >= 100 && input <= 1600) {
-//    let distanceResult = (100 * input) / 1600;
-//
-//    let realResult = 0;
-//
-//    if (teams == "Original") {
-//        let m = -0.23703;
-//        let b = 1001.46;
-//        realResult = Math.round( m * input + b );
-//    } else if (teams == "Russian") {
-//        let k = 21.33;
-//        let l = 100;
-//        realResult = Math.round( 1120 - (((input / l) - 1) * k)) ;
-//    }
 }
